@@ -67,7 +67,7 @@ console.log(Object.entries(tinderUser)) // [ [ 'id', '123abc' ], [ 'name', 'Samm
 // this will insert all the keys and values pair in an array inside an array
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true
-// this will check weather the key is present or not inside the object
+// this will check weather the key is present inside the object or not
 
 
 const course = {
