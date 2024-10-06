@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// in for each loop we pass a callback function
+// in forEach loop we pass a callback function
 
 coding.forEach( function (val){
     console.log(val);
