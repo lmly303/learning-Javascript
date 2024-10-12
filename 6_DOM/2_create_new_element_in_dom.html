@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Element In DOM </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+
+    // two ways to add text in the text area
+    div.innerText = "Chai aur code " 
+    // This approach is straightforward and often faster for simple assignments because it directly sets the text content of the element.
+    // This method is more efficient when you are replacing all text content because it does not require creating an intermediate node.
+
+   
+    const addText = document.createTextNode("Hello World")
+    div.appendChild(addText) 
+    // This method involves creating a new text node and appending it to the existing content.
+    // This can be more efficient when you want to preserve existing content within the **`<div>`** and add new text to it.
+
+    document.body.appendChild(div) // this finaaly append it and now its visible on the browser
+</script>
+</html>
